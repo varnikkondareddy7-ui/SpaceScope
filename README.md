@@ -1,102 +1,92 @@
-# SpaceScope V10.6
+# SpaceScope
 
-Image-only repair using verified Tiangong and NASA Bennu URLs. Everything else is unchanged.
+SpaceScope is an interactive web application for exploring spacecraft, space missions, orbital objects, and spacecraft engineering in one place.
 
-# SpaceScope V10.5
+It combines live orbital data, mission profiles, NASA visualizations, spacecraft system explanations, comparison tools, historical timelines, and signal-delay information into a single educational interface.
 
-Image-only repair: Tiangong and asteroid/Bennu images replaced with verified direct Wikimedia file URLs. Everything else remains unchanged from V10.4.
+## What SpaceScope Does
 
-# SpaceScope V10.4
+SpaceScope helps users understand both **where spacecraft are** and **how they work**.
 
-Compare-page cache-proof fix plus asteroid image repair. Everything else remains based on V10.3.
+Users can:
 
-# SpaceScope V10.3
+- Explore spacecraft and missions across the Solar System
+- View NASA Eyes visualizations for planets, satellites, asteroids, and missions
+- Browse live orbital objects using CelesTrak data
+- Open detailed spacecraft profiles with mission facts, instruments, engineering systems, timelines, and image galleries
+- Compare spacecraft and missions
+- Explore major spacecraft systems including propulsion, power, communications, navigation, robotics, thermal control, structures, and scientific instruments
+- Browse mission records and historical milestones
+- Explore signal delay between Earth and destinations across the Solar System
 
-Compare-page-only update. Everything else from V10.2 is unchanged.
+## Who It Is For
 
-# SpaceScope V10.2
+SpaceScope is designed for:
 
-Fixes the two remaining unstyled pages: the homepage and mission profile pages. The homepage template now matches its CSS, and mission profiles now use a fully styled hero, gallery, facts, engineering, anatomy, instruments, and timeline layout.
+- Students learning about space science and engineering
+- People curious about spacecraft and missions
+- Educators looking for an interactive way to explain space technology
+- Developers interested in working with public space data
+- Anyone who wants a more organized way to explore spacecraft, satellites, and missions
 
-# SpaceScope V10.1
+The goal is to make complex space systems easier to understand without requiring an aerospace engineering background.
 
-Homepage-only repair for V10. Adds the missing homepage visual styles while leaving the rest of V10 unchanged.
+## What I Learned
 
-# SpaceScope V10
+Building SpaceScope helped me learn how to turn a large technical idea into a complete web application.
 
-V10 restores a polished panel/card visual system across every page, fixes raw browser-default Explore/Live controls, replaces the confusing How It Works section with Spacecraft Systems, and swaps the broken Earth/Moon imagery with stable public image sources.
+Some of the main things I learned include:
 
-# SpaceScope V9
+- Building a backend with FastAPI
+- Connecting Python backend logic to frontend templates with Jinja
+- Structuring a larger web application into templates, static files, data files, and backend routes
+- Working with external public data sources
+- Using CelesTrak orbital data instead of manually maintaining thousands of satellites
+- Integrating NASA Eyes experiences into a larger application
+- Designing data structures for spacecraft, missions, engineering systems, and records
+- Building reusable pages for many different spacecraft
+- Creating interactive interfaces with JavaScript
+- Debugging browser, data-loading, styling, and routing issues
+- Improving a project through multiple design and architecture iterations
+- Using Git and GitHub for version control and publishing code
 
-V9 is a simplification pass after V8 became over-designed. It fixes the stuck orbital modal, removes overlapping image/text layouts, uses real planet imagery, simplifies navigation, reduces visual patterns, and rewrites How Spacecraft Work around six clear engineering problems.
+One of the biggest lessons from this project was learning when to use live data, when to use curated data, and how to combine both into one product.
 
-# SpaceScope V8
+## Tech Stack
 
-V8 is a full dark, image-heavy redesign. It simplifies the product around Explore, Live, Missions, Where Is Everything, How Spacecraft Work, Compare, Records, Timeline, and Signal Delay. The homepage, mission pages, system guide, and supporting pages were all reformatted to use a consistent cinematic space visual system.
+### Backend
 
-# SpaceScope V7
+- Python
+- FastAPI
+- Jinja2
 
-V7 turns SpaceScope into a broader interactive space product. It adds SpaceScope Live, Where Is Everything, Space Records, a global mission timeline, richer comparison, mission galleries, mission anatomy, record/firsts sections, a renamed How Spacecraft Work experience, stronger navigation, and a richer NASA-inspired editorial homepage.
+### Frontend
 
-# SpaceScope V6
+- HTML
+- CSS
+- JavaScript
 
-NASA-inspired editorial redesign. Main 3D atlas now uses only official NASA Eyes embeds, including the documented ISS current-position view.
+### Data and Space Resources
 
-# SpaceScope V5
+- CelesTrak orbital data
+- NASA Eyes
+- NASA mission imagery and public resources
+- Wikimedia Commons for selected mission imagery
 
-V5 rebuilds Explore as a ten-view interactive atlas using NASA Eyes and official Orbital Radar embeds. The object database tab now defaults to smaller satellite groups and uses explicit tab handling so the live catalog button responds reliably. Loaded orbital rows open a detail modal.
+## Main Features
 
-# SpaceScope V4
+### Interactive Space Exploration
 
-V4 replaces the custom primary 3D scene with a professional multi-map hub using official embeddable NASA Eyes experiences and official Orbital Radar widgets. It also makes live catalog rows clickable and extends CelesTrak caching to two hours to follow current source limits.
+SpaceScope includes embedded NASA Eyes experiences for exploring destinations, satellites, asteroids, and spacecraft.
 
-# SpaceScope V3.2
+### Live Orbital Catalog
 
-V3.2 fixes browser module resolution for Three.js OrbitControls using an import map. It also adds a visible timeout error if the CDN does not load.
+The application retrieves orbital data from CelesTrak for groups such as:
 
-# SpaceScope V3.1
-
-V3.1 fixes the black 3D viewer by switching Three.js and OrbitControls to modern ES module imports.
-
-
-# SpaceScope V3
-
-SpaceScope V3 fixes the two major architecture problems in the earlier version.
-
-## 1. The 3D view now includes human-made technology
-
-The app no longer relies on Solar System Scope as the main explorer.
-
-`/explore` uses Three.js to render:
-
-- Sun
-- Mercury
-- Venus
-- Earth
-- Moon
-- Mars
-- Jupiter
-- Saturn
-- Uranus
-- Neptune
-- Curated spacecraft markers around their destinations
-- Deep-space probes
-- Live Earth-orbit satellite clouds from CelesTrak
-
-The Earth satellite cloud is generated from orbital elements supplied by CelesTrak and propagated in the browser with a lightweight Kepler approximation.
-
-## 2. The database is no longer a tiny hand-written list
-
-SpaceScope now separates data into two layers.
-
-### Live orbital catalog
-
-The backend requests CelesTrak GP JSON for groups such as:
-
-- active satellites
-- stations
-- weather
-- science
+- Active satellites
+- Space stations
+- Weather satellites
+- Science satellites
 - Starlink
 - OneWeb
 - GPS
@@ -105,57 +95,69 @@ The backend requests CelesTrak GP JSON for groups such as:
 - GLONASS
 - CubeSats
 
-This avoids manually storing thousands of changing orbital objects.
+This allows SpaceScope to display changing orbital data without storing thousands of satellites manually.
 
-### Deep spacecraft profiles
+### Spacecraft Profiles
 
-`app/data/objects.json` stores richer profiles for major spacecraft operating around Earth and across the solar system.
+Major spacecraft have deeper profiles containing information such as:
 
-Each profile includes:
+- Operator
+- Manufacturer
+- Mission purpose
+- Mass
+- Power
+- Propulsion
+- Communications
+- Instruments
+- Technology
+- Mission timeline
+- Engineering systems
 
-- operator
-- manufacturer
-- mass
-- power
-- propulsion
-- communications
-- instruments
-- technology
-- mission timeline
+### Spacecraft Systems
 
-## Technology taxonomy
+SpaceScope explains the major engineering problems spacecraft need to solve, including:
 
-`app/data/technology_taxonomy.json` contains a broad taxonomy covering:
+- Propulsion
+- Power
+- Communications
+- Navigation and control
+- Robotics
+- Imaging
+- Scientific instruments
+- Thermal systems
+- Structures and materials
+- Computing and autonomy
+- Human spaceflight systems
+- Entry, descent, and landing
 
-- propulsion
-- power
-- communications
-- navigation and control
-- robotics
-- imaging
-- spectroscopy
-- remote sensing
-- space environment sensing
-- thermal systems
-- structures and materials
-- human spaceflight
-- science instruments
-- entry/descent/landing
-- computing and autonomy
+### Compare
 
-## Run
+Users can compare different spacecraft and missions side by side.
 
-```powershell
-python -m pip install -r requirements.txt
-python -m uvicorn app.main:app --reload
-```
+### Timeline and Records
 
-Open:
+SpaceScope includes major historical milestones, mission records, and notable firsts in space exploration.
 
-http://127.0.0.1:8000
+### Signal Delay
 
-## Important
+Users can explore how long communication takes between Earth and destinations across the Solar System.
 
-Live CelesTrak features require an internet connection when the app is running.
+## Project Structure
 
-The app is architected so the Earth-orbit catalog comes from a live catalog instead of being frozen inside the repository.
+```text
+SpaceScope/
+├── app/
+│   ├── data/
+│   │   ├── live_cards.json
+│   │   ├── objects.json
+│   │   ├── records.json
+│   │   └── technology_taxonomy.json
+│   ├── static/
+│   │   ├── css/
+│   │   └── js/
+│   ├── templates/
+│   └── main.py
+├── requirements.txt
+├── run_windows.bat
+├── .gitignore
+└── README.md
