@@ -1,5 +1,5 @@
 # SpaceScope
-**Live site:** [https://YOUR-SPACESCOPE-URL.onrender.com](https://spacescope-5737.onrender.com/)
+**Live site:** (https://spacescope-5737.onrender.com/)
 SpaceScope is an interactive web application for exploring spacecraft, space missions, orbital objects, and spacecraft engineering in one place.
 
 It combines live orbital data, mission profiles, NASA visualizations, spacecraft system explanations, comparison tools, historical timelines, and signal-delay information into a single educational interface.
