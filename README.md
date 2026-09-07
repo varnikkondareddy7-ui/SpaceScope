@@ -21,6 +21,9 @@ Users can:
 - Browse mission records and historical milestones
 - Explore signal delay between Earth and destinations across the Solar System
 
+
+<img width="677" height="413" alt="image" src="https://github.com/user-attachments/assets/cfdc1215-4025-475a-8d7b-15bcfb9e7218" />
+
 ## Who It Is For
 
 SpaceScope is designed for:
