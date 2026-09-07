@@ -1,0 +1,139 @@
+
+{% extends "base.html" %}
+{% block title %}SpaceScope | Explore spacecraft and missions{% endblock %}
+{% block content %}
+
+<section class="home-hero">
+  <div class="home-hero-image"></div>
+  <div class="home-hero-overlay"></div>
+
+  <div class="container home-hero-content">
+    <span class="eyebrow light">SPACECRAFT + MISSIONS</span>
+    <h1>Explore the machines humans sent beyond Earth.</h1>
+    <p>Track missions in 3D, see where spacecraft are, and understand the systems that keep them working.</p>
+
+    <div class="hero-buttons">
+      <a href="/explore" class="primary-btn">Explore in 3D</a>
+      <a href="/database" class="secondary-btn">Browse missions</a>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">START HERE</span>
+        <h2>Four ways to explore SpaceScope.</h2>
+      </div>
+    </div>
+
+    <div class="feature-choice-grid">
+      <a href="/explore" class="feature-choice">
+        <span>01</span>
+        <h3>Explore in 3D</h3>
+        <p>Move through NASA Eyes views of the solar system, Earth satellites, ISS, asteroids, and deep-space missions.</p>
+      </a>
+
+      <a href="/where" class="feature-choice">
+        <span>02</span>
+        <h3>Find spacecraft</h3>
+        <p>Browse missions by the world, orbit, or region they are exploring.</p>
+      </a>
+
+      <a href="/technologies" class="feature-choice">
+        <span>03</span>
+        <h3>Spacecraft systems</h3>
+        <p>Learn propulsion, power, communications, navigation, thermal control, robotics, and science instruments.</p>
+      </a>
+
+      <a href="/compare" class="feature-choice">
+        <span>04</span>
+        <h3>Compare missions</h3>
+        <p>Put two spacecraft side by side and compare how they were engineered.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="image-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow light">FEATURED MISSIONS</span>
+        <h2>Start with the spacecraft.</h2>
+      </div>
+      <a href="/database">View all missions →</a>
+    </div>
+
+    <div class="mission-grid">
+      {% for o in objects[:6] %}
+      <a href="/object/{{ o.slug }}" class="mission-card">
+        <div class="mission-image mission-image-{{ loop.index }}"></div>
+        <div class="mission-info">
+          <span>{{ o.kind }} · {{ o.destination }}</span>
+          <h3>{{ o.name }}</h3>
+          <p>{{ o.summary }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="planet-showcase">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow light">SOLAR SYSTEM</span>
+        <h2>Where is the hardware?</h2>
+      </div>
+      <a href="/where">Open solar system →</a>
+    </div>
+
+    <div class="planet-grid">
+      <a href="/where" class="planet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" alt="Sun">
+        <div><h3>Sun</h3><p>Parker Solar Probe</p></div>
+      </a>
+
+      <a href="/where" class="planet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+        <div><h3>Earth</h3><p>ISS, Hubble, and Earth satellites</p></div>
+      </a>
+
+      <a href="/where" class="planet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+        <div><h3>Mars</h3><p>Perseverance, Curiosity, MRO</p></div>
+      </a>
+
+      <a href="/where" class="planet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+        <div><h3>Jupiter</h3><p>Juno, Europa Clipper, JUICE</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="mission-feature">
+  <div class="mission-feature-image art-{{ mission_of_day.slug }}"></div>
+  <div class="mission-feature-overlay"></div>
+
+  <div class="container mission-feature-content">
+    <span class="eyebrow light">MISSION OF THE DAY</span>
+    <h2>{{ mission_of_day.name }}</h2>
+    <p>{{ mission_of_day.summary }}</p>
+    <a href="/object/{{ mission_of_day.slug }}" class="primary-btn">Open mission</a>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container simple-link-grid">
+    <a href="/live"><span>LIVE</span><strong>See active missions</strong><b>→</b></a>
+    <a href="/timeline"><span>TIMELINE</span><strong>Browse missions through time</strong><b>→</b></a>
+    <a href="/records"><span>RECORDS</span><strong>See spacecraft records</strong><b>→</b></a>
+    <a href="/signals"><span>SIGNAL DELAY</span><strong>Explore communication delay</strong><b>→</b></a>
+  </div>
+</section>
+
+{% endblock %}

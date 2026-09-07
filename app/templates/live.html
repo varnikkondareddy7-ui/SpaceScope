@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+{% block title %}Live | SpaceScope{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container"><span class="eyebrow light">SPACESCOPE LIVE</span><h1>What is active right now?</h1><p>See active stations, rovers, observatories, and deep-space spacecraft in one clean view.</p></div>
+</section>
+<section class="content-section">
+  <div class="container live-grid">
+    {% for x in live_cards %}
+    <a href="/object/{{ x.slug }}" class="live-card">
+      <div class="live-card-top"><span class="live-dot"></span><b>{{ x.status }}</b></div>
+      <h2>{{ x.name }}</h2><p>{{ x.location }}</p>
+      <div class="live-card-metric"><strong>{{ x.metric }}</strong><span>{{ x.label }}</span></div>
+      <b class="live-link">Open mission →</b>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

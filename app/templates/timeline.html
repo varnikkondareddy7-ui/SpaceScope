@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% block title %}Mission Timeline | SpaceScope{% endblock %}
+{% block content %}
+<section class="timeline-hero">
+  <div class="container">
+    <span class="section-kicker light">MISSION TIMELINE</span>
+    <h1>Decades of machines leaving Earth.</h1>
+    <p>Move through the chronology of major missions already indexed by SpaceScope.</p>
+  </div>
+</section>
+<section class="white-section">
+  <div class="container global-timeline">
+    {% for item in timeline %}
+    <a href="/object/{{ item.slug }}" class="global-time-row">
+      <strong>{{ item.year }}</strong>
+      <span class="timeline-rule"></span>
+      <div><h2>{{ item.name }}</h2><p>{{ item.kind }} · {{ item.destination }}</p></div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

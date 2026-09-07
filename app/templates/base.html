@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}SpaceScope{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css?v=10.6">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-brand"><span class="brand-disc"></span><span>SPACESCOPE</span></a>
+    <nav class="primary-nav">
+      <a href="/explore">Explore</a>
+      <a href="/database">Missions</a>
+      <a href="/where">Solar System</a>
+      <a href="/technologies">Spacecraft Systems</a>
+      <a href="/live">Live</a>
+    </nav>
+    <button id="searchOpen" class="header-search" type="button">Search</button>
+  </div>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><div class="site-brand footer-brand"><span class="brand-disc"></span><span>SPACESCOPE</span></div><p>Spacecraft, missions, and the systems that make them work.</p></div>
+    <div class="footer-links"><a href="/compare">Compare</a><a href="/timeline">Timeline</a><a href="/records">Records</a><a href="/signals">Signal Delay</a></div>
+  </div>
+</footer>
+<div id="searchModal" class="modal hidden">
+  <div class="searchpanel">
+    <div class="searchhead"><input id="globalSearch" placeholder="Search missions, spacecraft, planets, technology..."><button id="searchClose" type="button">Close</button></div>
+    <div id="searchResults"></div>
+  </div>
+</div>
+<script src="/static/js/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

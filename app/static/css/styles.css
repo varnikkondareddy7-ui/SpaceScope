@@ -1,0 +1,1049 @@
+
+:root{--bg:#0b0d12;--panel:#151922;--panel2:#1c212b;--text:#f5f3ed;--muted:#a6abb4;--line:rgba(255,255,255,.12);--red:#d63d49;--cyan:#8fc9d3}
+*{box-sizing:border-box}.hidden{display:none!important}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.container{width:min(1220px,calc(100% - 48px));margin:0 auto}h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif}.eyebrow{font-size:9px;font-weight:700;letter-spacing:.17em;color:var(--cyan)}.eyebrow.light{color:#fff}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(11,13,18,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.header-inner{height:74px;display:flex;align-items:center;justify-content:space-between}.site-brand{display:flex;align-items:center;gap:11px;font:700 13px "Space Grotesk";letter-spacing:.17em}.brand-disc{width:34px;height:34px;border-radius:50%;background:var(--red);position:relative}.brand-disc:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;top:7px;left:7px}.primary-nav{display:flex;gap:28px}.primary-nav a{font-size:12px;color:#c2c5cb}.header-search{background:#151922;border:1px solid var(--line);color:#fff;border-radius:999px;padding:8px 15px}
+.page-hero{padding:90px 0 65px;background:linear-gradient(180deg,#141821,#0b0d12);border-bottom:1px solid var(--line)}.page-hero h1{font-size:clamp(60px,7vw,98px);line-height:.94;letter-spacing:-.06em;margin:12px 0 18px}.page-hero p{max-width:760px;font-size:15px;line-height:1.65;color:#a7acb5}
+.content-section{padding:80px 0}.image-section{padding:80px 0;background:#12161e}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.section-heading h2{font-size:clamp(42px,5vw,64px);line-height:1;letter-spacing:-.05em;margin:8px 0}.section-heading>a{font-size:11px;color:var(--cyan)}
+.explore-section{padding:34px 0 90px}.explore-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.explore-tab{border:1px solid var(--line);background:#161b24;color:#b2b7bf;border-radius:7px;padding:10px 13px;cursor:pointer;font-size:11px}.explore-tab.active{background:var(--red);border-color:var(--red);color:#fff}.explore-tab span{font-size:8px;margin-right:6px;opacity:.7}.explore-layout{display:grid;grid-template-columns:320px 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#11151c}.explore-info{padding:28px;border-right:1px solid var(--line)}.explore-info h2{font-size:42px;margin:10px 0}.explore-info p{font-size:12px;line-height:1.6;color:#9aa1aa}.explore-meta{margin:26px 0;border-top:1px solid var(--line)}.explore-meta div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line)}.explore-meta span{font-size:7px;color:#747d87}.explore-meta strong{font-size:9px}.inline-link{font-size:10px;color:var(--cyan)}.explore-frame-wrap{height:700px;position:relative;background:#020306}.explore-frame-wrap iframe{width:100%;height:100%;border:0}.explore-loader{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:#0b0f14;color:#77818c;font-size:9px}.explore-loader>span{width:32px;height:2px;background:var(--red)}
+.mission-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mission-story{height:410px;border-radius:10px;overflow:hidden;position:relative;background:center/cover no-repeat}.story-perseverance{background-image:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9)),url("https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg")}.story-juno{background-image:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9)),url("https://images-assets.nasa.gov/image/PIA21033/PIA21033~orig.jpg")}.story-voyager{background-image:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9)),url("https://images-assets.nasa.gov/image/PIA17047/PIA17047~orig.jpg")}.mission-story>div{position:absolute;left:22px;right:22px;bottom:20px}.mission-story span{font-size:8px}.mission-story h3{font-size:31px;margin:7px 0}.mission-story p{font-size:10px;color:#d0d3d7}
+.live-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.live-card{background:#151922;border:1px solid var(--line);border-radius:10px;padding:22px;min-height:270px}.live-card-top{display:flex;gap:7px;align-items:center}.live-dot{width:7px;height:7px;border-radius:50%;background:#67d89a}.live-card-top b{font-size:8px;color:#78d9a1}.live-card h2{font-size:27px;margin:30px 0 8px}.live-card>p{font-size:11px;color:#929aa4}.live-card-metric{margin-top:40px}.live-card-metric strong{display:block;font-size:25px}.live-card-metric span{font-size:8px;color:#717b86}.live-link{display:block;margin-top:18px;font-size:10px;color:var(--cyan)}
+.systems-overview{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.systems-overview article{background:#151922;border:1px solid var(--line);border-radius:10px;padding:24px;min-height:220px}.systems-overview article>span{font-size:8px;color:#69737f}.systems-overview h2{font-size:32px;margin:24px 0 7px}.systems-overview p{font-size:11px;color:#9199a3}.systems-overview article>div{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.systems-overview b{font-size:9px;border:1px solid var(--line);padding:7px 8px;border-radius:5px;background:#10141b;font-weight:500}.tech-search{width:100%;background:#151922;border:1px solid var(--line);border-radius:7px;color:#fff;padding:13px;margin-bottom:24px}.tech-index{border-top:1px solid var(--line)}.tech-group{display:grid;grid-template-columns:260px 1fr;border-bottom:1px solid var(--line)}.tech-group h3{padding:20px;margin:0;border-right:1px solid var(--line);font-size:20px}.tech-group>div{padding:20px;display:flex;flex-wrap:wrap;gap:7px}.tech-group span{font-size:9px;border:1px solid var(--line);padding:6px 8px;border-radius:5px}
+.destination-grid{display:grid;gap:24px}.destination-card{display:grid;grid-template-columns:340px 1fr;background:#141922;border:1px solid var(--line);border-radius:12px;overflow:hidden}.destination-image{min-height:360px;background:center/cover no-repeat;background-color:#1a1f29}.destination-image-earth{background-image:url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg")}.destination-image-moon{background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg")}.destination-image-mars{background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg")}.destination-image-jupiter{background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg")}.destination-image-sun{background-image:url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg")}.destination-image-deep-space{background-image:url("https://images-assets.nasa.gov/image/PIA17047/PIA17047~orig.jpg")}.destination-content{padding:24px}.destination-header{display:flex;justify-content:space-between;align-items:end;padding-bottom:16px;border-bottom:1px solid var(--line)}.destination-header h2{font-size:38px;margin:7px 0 0}.destination-header>span{font-size:9px;color:#7d8791}.destination-list a{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.destination-list span{font-size:7px;color:#77d9a0}.destination-list h3{font-size:16px;margin:5px 0}.destination-list p{font-size:9px;color:#7c8590;margin:0}.destination-list b{color:var(--cyan)}
+.database-actions{display:flex;gap:18px;padding:20px 0}.database-actions a{font-size:10px;color:var(--cyan)}.dbtabs{display:flex;border-bottom:1px solid var(--line)}.dbtab{background:#151922;border:1px solid var(--line);border-bottom:0;color:#a2a8b0;padding:10px 14px;cursor:pointer}.dbtab.active{background:var(--red);color:#fff}.dbsection,.dbsection-v8{padding:28px 0 90px}.filters,.catalogbar{display:grid;grid-template-columns:1.4fr 220px 220px;gap:10px;margin-bottom:20px}.filters input,.filters select,.catalogbar input,.catalogbar select{background:#151922;border:1px solid var(--line);border-radius:6px;color:#fff;padding:12px}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.obj-card{padding:20px;background:#151922;border:1px solid var(--line);border-radius:9px}.obj-card h3{font-size:25px;margin:15px 0 7px}.obj-card p{font-size:10px;color:#9198a1}.catalog-table{border:1px solid var(--line);border-radius:8px;overflow:hidden}.catalog-row{display:grid;grid-template-columns:1.6fr .55fr .65fr .65fr .65fr .8fr;width:100%;border:0;border-bottom:1px solid var(--line);background:#12161d;color:#dce1e7;padding:13px;text-align:left;cursor:pointer}.catalog-row:hover{background:#181d26}.sat-modal{position:fixed;inset:0;z-index:350;background:rgba(0,0,0,.78);display:flex;align-items:center;justify-content:center;padding:20px}.sat-modal-card{max-width:680px;width:100%;background:#141922;border:1px solid var(--line);border-radius:10px;padding:22px;position:relative}.sat-modal-close{position:absolute;right:12px;top:10px;background:none;border:0;color:#fff;font-size:24px}
+.modal{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.82);padding:80px 20px}.searchpanel{max-width:760px;margin:0 auto;background:#151922;border:1px solid var(--line);border-radius:10px}.searchhead{display:flex;border-bottom:1px solid var(--line)}.searchhead input{flex:1;background:none;border:0;color:#fff;padding:16px}.searchhead button{background:#202632;border:0;color:#fff;padding:0 16px}
+.site-footer{background:#090b10;border-top:1px solid var(--line);padding:45px 0}.footer-inner{display:flex;justify-content:space-between;gap:40px}.site-footer p{font-size:10px;color:#707985}.footer-links{display:flex;gap:18px;font-size:10px;color:#9ba2ab}
+@media(max-width:980px){.primary-nav{display:none}.explore-layout,.destination-card{grid-template-columns:1fr}.explore-info{border-right:0;border-bottom:1px solid var(--line)}.live-grid,.mission-story-grid,.card-grid{grid-template-columns:1fr 1fr}.systems-overview{grid-template-columns:1fr}}
+@media(max-width:620px){.container{width:min(100% - 28px,1220px)}.content-section,.image-section{padding:68px 0}.live-grid,.mission-story-grid,.card-grid{grid-template-columns:1fr}.explore-frame-wrap{height:520px}.filters,.catalogbar{grid-template-columns:1fr}.tech-group{grid-template-columns:1fr}.tech-group h3{border-right:0;border-bottom:1px solid var(--line)}.footer-inner{flex-direction:column}}
+
+
+/* =========================================================
+   V10.1 homepage fix
+   ========================================================= */
+
+.home-hero{
+  height:760px;
+  position:relative;
+  overflow:hidden;
+  background:#090b10
+}
+.home-hero-image{
+  position:absolute;
+  inset:0;
+  background:
+    url("https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg")
+    center 42%/cover no-repeat
+}
+.home-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(7,9,13,.94) 0%,rgba(7,9,13,.58) 50%,rgba(7,9,13,.12) 100%),
+    linear-gradient(180deg,transparent 60%,rgba(11,13,18,.96) 100%)
+}
+.home-hero-content{
+  position:relative;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start
+}
+.home-hero h1{
+  font-size:clamp(62px,7vw,100px);
+  line-height:.92;
+  letter-spacing:-.06em;
+  max-width:900px;
+  margin:14px 0 24px
+}
+.home-hero p{
+  max-width:650px;
+  font-size:17px;
+  line-height:1.65;
+  color:#d7d8dc
+}
+.hero-buttons{
+  display:flex;
+  gap:10px;
+  margin-top:26px
+}
+.primary-btn,
+.secondary-btn{
+  display:inline-block;
+  padding:13px 18px;
+  border-radius:5px;
+  font-size:12px;
+  font-weight:700
+}
+.primary-btn{
+  background:var(--red);
+  color:#fff
+}
+.primary-btn:hover{
+  filter:brightness(.94)
+}
+.secondary-btn{
+  border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.07);
+  color:#fff
+}
+
+.feature-choice-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px
+}
+.feature-choice{
+  padding:24px;
+  border:1px solid var(--line);
+  background:#151922;
+  border-radius:10px;
+  min-height:230px;
+  transition:transform .2s,background .2s
+}
+.feature-choice:hover{
+  background:#1a1f29;
+  transform:translateY(-2px)
+}
+.feature-choice>span{
+  font-size:9px;
+  color:#717b86
+}
+.feature-choice h3{
+  font-size:24px;
+  margin:42px 0 8px
+}
+.feature-choice p{
+  font-size:11px;
+  line-height:1.55;
+  color:#949ba5
+}
+
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+.mission-card{
+  background:#0f1319;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden
+}
+.mission-image{
+  height:230px;
+  background:center/cover no-repeat
+}
+.mission-image-1{
+  background-image:url("https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg")
+}
+.mission-image-2{
+  background-image:url("https://images-assets.nasa.gov/image/PIA19808/PIA19808~orig.jpg")
+}
+.mission-image-3{
+  background-image:url("https://images-assets.nasa.gov/image/PIA04916/PIA04916~orig.jpg")
+}
+.mission-image-4{
+  background-image:url("https://images-assets.nasa.gov/image/PIA18105/PIA18105~orig.jpg")
+}
+.mission-image-5{
+  background-image:url("https://images-assets.nasa.gov/image/PIA12792/PIA12792~orig.jpg")
+}
+.mission-image-6{
+  background-image:url("https://images-assets.nasa.gov/image/PIA17047/PIA17047~orig.jpg")
+}
+.mission-info{
+  padding:18px
+}
+.mission-info>span{
+  font-size:8px;
+  color:#7e8793
+}
+.mission-info h3{
+  font-size:25px;
+  margin:7px 0
+}
+.mission-info p{
+  font-size:10px;
+  color:#9198a2;
+  line-height:1.55
+}
+
+.planet-showcase{
+  padding:90px 0;
+  background:#0d1016
+}
+.planet-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px
+}
+.planet-card{
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden
+}
+.planet-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  background:#080a0e
+}
+.planet-card>div{
+  padding:16px
+}
+.planet-card h3{
+  font-size:24px;
+  margin:0 0 5px
+}
+.planet-card p{
+  font-size:10px;
+  color:#8e97a1;
+  margin:0
+}
+
+.mission-feature{
+  height:650px;
+  position:relative;
+  overflow:hidden
+}
+.mission-feature-image{
+  position:absolute;
+  inset:0;
+  background:center/cover no-repeat
+}
+.mission-feature-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(8,10,14,.92),
+    rgba(8,10,14,.48) 55%,
+    rgba(8,10,14,.08)
+  )
+}
+.mission-feature-content{
+  position:relative;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start
+}
+.mission-feature-content h2{
+  font-size:72px;
+  letter-spacing:-.05em;
+  margin:10px 0 16px
+}
+.mission-feature-content p{
+  max-width:620px;
+  font-size:15px;
+  line-height:1.65;
+  color:#d4d6da;
+  margin-bottom:24px
+}
+
+.art-perseverance{
+  background-image:url("https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg")
+}
+.art-curiosity{
+  background-image:url("https://images-assets.nasa.gov/image/PIA19808/PIA19808~orig.jpg")
+}
+.art-voyager-1{
+  background-image:url("https://images-assets.nasa.gov/image/PIA17047/PIA17047~orig.jpg")
+}
+.art-voyager-2{
+  background-image:url("https://images-assets.nasa.gov/image/PIA17046/PIA17046~orig.jpg")
+}
+.art-juno{
+  background-image:url("https://images-assets.nasa.gov/image/PIA21033/PIA21033~orig.jpg")
+}
+.art-iss{
+  background-image:url("https://images-assets.nasa.gov/image/iss065e336671/iss065e336671~orig.jpg")
+}
+.art-jwst{
+  background-image:url("https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~orig.jpg")
+}
+.art-hubble{
+  background-image:url("https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001519/GSFC_20171208_Archive_e001519~orig.jpg")
+}
+.art-parker-solar-probe{
+  background-image:url("https://images-assets.nasa.gov/image/PIA22146/PIA22146~orig.jpg")
+}
+.art-new-horizons{
+  background-image:url("https://images-assets.nasa.gov/image/PIA19952/PIA19952~orig.jpg")
+}
+
+.simple-link-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px
+}
+.simple-link-grid a{
+  display:grid;
+  grid-template-columns:110px 1fr auto;
+  align-items:center;
+  gap:15px;
+  padding:18px 20px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#151922
+}
+.simple-link-grid span{
+  font-size:8px;
+  color:#707986
+}
+.simple-link-grid strong{
+  font-size:12px
+}
+.simple-link-grid b{
+  color:var(--cyan)
+}
+
+@media(max-width:980px){
+  .feature-choice-grid,
+  .planet-grid,
+  .mission-grid{
+    grid-template-columns:1fr 1fr
+  }
+}
+@media(max-width:620px){
+  .home-hero{
+    height:700px
+  }
+  .home-hero h1{
+    font-size:53px
+  }
+  .feature-choice-grid,
+  .planet-grid,
+  .mission-grid,
+  .simple-link-grid{
+    grid-template-columns:1fr
+  }
+  .mission-feature{
+    height:620px
+  }
+  .mission-feature-content h2{
+    font-size:50px
+  }
+}
+
+
+/* =========================================================
+   SpaceScope V10.2: homepage + mission profile repair
+   ========================================================= */
+
+/* Homepage */
+.home-hero{
+  height:760px;
+  position:relative;
+  overflow:hidden;
+  background:#090b10;
+}
+.home-hero-image{
+  position:absolute;
+  inset:0;
+  background:
+    url("https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg")
+    center 42%/cover no-repeat;
+}
+.home-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(7,9,13,.95) 0%,rgba(7,9,13,.62) 50%,rgba(7,9,13,.12) 100%),
+    linear-gradient(180deg,transparent 58%,rgba(11,13,18,.97) 100%);
+}
+.home-hero-content{
+  position:relative;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+.home-hero h1{
+  font-size:clamp(62px,7vw,100px);
+  line-height:.92;
+  letter-spacing:-.06em;
+  max-width:900px;
+  margin:14px 0 24px;
+}
+.home-hero p{
+  max-width:650px;
+  font-size:17px;
+  line-height:1.65;
+  color:#d7d8dc;
+}
+.hero-buttons{
+  display:flex;
+  gap:10px;
+  margin-top:26px;
+}
+.primary-btn,.secondary-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:0 18px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:700;
+}
+.primary-btn{background:var(--red);color:#fff;}
+.secondary-btn{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.26);
+  color:#fff;
+}
+.feature-choice-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.feature-choice{
+  min-height:235px;
+  padding:24px;
+  background:linear-gradient(180deg,#171c25,#12161e);
+  border:1px solid var(--line);
+  border-radius:11px;
+  transition:transform .2s ease, background .2s ease;
+}
+.feature-choice:hover{
+  transform:translateY(-3px);
+  background:#1a202a;
+}
+.feature-choice>span{font-size:9px;color:#727d88;}
+.feature-choice h3{font-size:24px;margin:42px 0 9px;}
+.feature-choice p{margin:0;font-size:11px;line-height:1.55;color:#949ca6;}
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.mission-card{
+  overflow:hidden;
+  background:#0f1319;
+  border:1px solid var(--line);
+  border-radius:11px;
+}
+.mission-image{
+  height:230px;
+  background-position:center;
+  background-size:cover;
+}
+.mission-info{padding:18px;}
+.mission-info>span{font-size:8px;color:#7d8792;}
+.mission-info h3{font-size:25px;margin:7px 0;}
+.mission-info p{margin:0;font-size:10px;line-height:1.55;color:#9299a2;}
+.planet-showcase{padding:90px 0;background:#0d1016;}
+.planet-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+.planet-card{
+  overflow:hidden;
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+.planet-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  background:#080a0e;
+}
+.planet-card>div{padding:16px;}
+.planet-card h3{font-size:24px;margin:0 0 5px;}
+.planet-card p{font-size:10px;color:#8e97a1;margin:0;}
+.mission-feature{
+  height:650px;
+  position:relative;
+  overflow:hidden;
+}
+.mission-feature-image{
+  position:absolute;
+  inset:0;
+  background-position:center;
+  background-size:cover;
+}
+.mission-feature-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(8,10,14,.94),rgba(8,10,14,.52) 55%,rgba(8,10,14,.08));
+}
+.mission-feature-content{
+  position:relative;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+.mission-feature-content h2{
+  font-size:72px;
+  line-height:.95;
+  letter-spacing:-.05em;
+  margin:10px 0 16px;
+}
+.mission-feature-content p{
+  max-width:620px;
+  font-size:15px;
+  line-height:1.65;
+  color:#d4d6da;
+  margin:0 0 24px;
+}
+.simple-link-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.simple-link-grid a{
+  display:grid;
+  grid-template-columns:110px 1fr auto;
+  gap:15px;
+  align-items:center;
+  padding:18px 20px;
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+.simple-link-grid span{font-size:8px;color:#707986;}
+.simple-link-grid strong{font-size:12px;}
+.simple-link-grid b{color:var(--cyan);}
+
+/* Mission profiles */
+.profile-hero{
+  padding:72px 0 58px;
+  background:
+    radial-gradient(circle at 82% 20%,rgba(143,201,211,.10),transparent 30%),
+    linear-gradient(180deg,#141821,#0c0f15);
+  border-bottom:1px solid var(--line);
+}
+.profile-breadcrumb{
+  display:flex;
+  gap:8px;
+  color:#78828d;
+  font-size:9px;
+  margin-bottom:36px;
+}
+.profile-breadcrumb a{color:#aab0b8;}
+.profile-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 320px;
+  gap:70px;
+  align-items:end;
+}
+.profile-hero h1{
+  max-width:900px;
+  font-size:clamp(58px,7vw,98px);
+  line-height:.92;
+  letter-spacing:-.06em;
+  margin:12px 0 22px;
+}
+.profile-hero p{
+  max-width:780px;
+  margin:0;
+  color:#aeb4bc;
+  font-size:15px;
+  line-height:1.7;
+}
+.profile-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:22px;
+}
+.profile-tags span{
+  padding:7px 9px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:8px;
+  color:#c5c9ce;
+}
+.profile-hero-facts{
+  border-top:1px solid var(--line);
+}
+.profile-hero-facts div{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+.profile-hero-facts span{
+  font-size:7px;
+  letter-spacing:.12em;
+  color:#747e89;
+}
+.profile-hero-facts strong{
+  max-width:190px;
+  text-align:right;
+  font-size:10px;
+  line-height:1.4;
+}
+.profile-gallery-section{
+  padding:16px 0;
+  background:#05070a;
+}
+.profile-gallery{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:8px;
+}
+.profile-gallery-image{
+  height:390px;
+  background-position:center;
+  background-size:cover;
+  background-color:#161b22;
+  border-radius:8px;
+}
+.profile-body{
+  padding:80px 0 100px;
+  background:var(--bg);
+}
+.profile-layout{
+  display:grid;
+  grid-template-columns:230px minmax(0,1fr);
+  gap:64px;
+}
+.profile-sidebar{
+  height:max-content;
+  position:sticky;
+  top:98px;
+  padding:20px;
+  background:#12161e;
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+.profile-sidebar h3{
+  font-size:22px;
+  margin:10px 0 20px;
+}
+.sidebar-facts{
+  border-top:1px solid var(--line);
+  margin-bottom:18px;
+}
+.sidebar-facts div{
+  padding:11px 0;
+  border-bottom:1px solid var(--line);
+}
+.sidebar-facts span{
+  display:block;
+  color:#747e89;
+  font-size:7px;
+  letter-spacing:.12em;
+  margin-bottom:5px;
+}
+.sidebar-facts strong{
+  display:block;
+  font-size:10px;
+  line-height:1.45;
+}
+.profile-compare{
+  width:100%;
+  text-align:center;
+}
+.profile-section{
+  padding-bottom:68px;
+}
+.profile-section h2{
+  font-size:clamp(36px,4vw,50px);
+  line-height:1;
+  letter-spacing:-.04em;
+  margin:8px 0 26px;
+}
+.profile-engineering-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.profile-engineering-grid article{
+  min-height:145px;
+  padding:18px;
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:9px;
+}
+.profile-engineering-grid span{
+  display:block;
+  margin-bottom:28px;
+  color:#727c87;
+  font-size:7px;
+  letter-spacing:.12em;
+}
+.profile-engineering-grid h3{
+  margin:0;
+  font-size:17px;
+  line-height:1.4;
+}
+.profile-anatomy{
+  border-top:1px solid var(--line);
+}
+.profile-anatomy article{
+  display:grid;
+  grid-template-columns:45px 220px 1fr;
+  gap:18px;
+  padding:17px 0;
+  border-bottom:1px solid var(--line);
+}
+.profile-anatomy article>span{
+  color:#6d7782;
+  font-size:8px;
+}
+.profile-anatomy h3{
+  margin:0;
+  font-size:17px;
+}
+.profile-anatomy p{
+  margin:0;
+  color:#8d96a0;
+  font-size:10px;
+  line-height:1.6;
+}
+.profile-instruments{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.profile-instruments span{
+  padding:8px 10px;
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:6px;
+  font-size:9px;
+}
+.profile-timeline{
+  border-top:1px solid var(--line);
+}
+.profile-timeline article{
+  display:grid;
+  grid-template-columns:130px 1fr minmax(250px,1.2fr);
+  gap:18px;
+  align-items:center;
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
+.profile-timeline strong{font-size:9px;}
+.profile-timeline article>div{
+  height:1px;
+  background:var(--line);
+}
+.profile-timeline p{
+  margin:0;
+  color:#969ea7;
+  font-size:10px;
+  line-height:1.5;
+}
+.profile-records{
+  border-top:1px solid var(--line);
+}
+.profile-records>div{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:12px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+.profile-records span{
+  color:var(--red);
+  font-size:18px;
+}
+.profile-records p{
+  margin:0;
+  font-size:11px;
+  line-height:1.5;
+}
+
+@media(max-width:980px){
+  .feature-choice-grid,.planet-grid,.mission-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .profile-hero-grid,.profile-layout{
+    grid-template-columns:1fr;
+  }
+  .profile-sidebar{
+    position:static;
+  }
+  .profile-gallery{
+    grid-template-columns:1fr 1fr;
+  }
+  .profile-gallery-image:first-child{
+    grid-column:1/3;
+  }
+}
+@media(max-width:620px){
+  .home-hero{height:700px;}
+  .home-hero h1{font-size:52px;}
+  .feature-choice-grid,.planet-grid,.mission-grid,.simple-link-grid{
+    grid-template-columns:1fr;
+  }
+  .mission-feature{height:620px;}
+  .mission-feature-content h2{font-size:50px;}
+  .profile-gallery{
+    grid-template-columns:1fr;
+  }
+  .profile-gallery-image:first-child{
+    grid-column:auto;
+  }
+  .profile-gallery-image{
+    height:230px;
+  }
+  .profile-engineering-grid{
+    grid-template-columns:1fr;
+  }
+  .profile-anatomy article{
+    grid-template-columns:30px 1fr;
+  }
+  .profile-anatomy p{
+    grid-column:2;
+  }
+  .profile-timeline article{
+    grid-template-columns:85px 1fr;
+  }
+  .profile-timeline article>div{
+    display:none;
+  }
+}
+
+
+/* =========================================================
+   SpaceScope V10.3 compare page
+   ========================================================= */
+
+.compare-toolbar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr);
+  gap:16px;
+  align-items:end;
+  margin-bottom:30px;
+}
+
+.compare-select label{
+  display:block;
+  margin-bottom:8px;
+  color:#7e8792;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.14em;
+}
+
+.compare-select select{
+  width:100%;
+  height:48px;
+  padding:0 14px;
+  color:#fff;
+  background:#151922;
+  border:1px solid var(--line);
+  border-radius:8px;
+  outline:none;
+}
+
+.compare-versus{
+  height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#aab2bb;
+  background:#12161e;
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.15em;
+}
+
+.compare-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.compare-card{
+  overflow:hidden;
+  background:#12161e;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+
+.compare-card-image{
+  height:285px;
+  background-color:#0b0d12;
+  background-position:center;
+  background-size:cover;
+  border-bottom:1px solid var(--line);
+}
+
+.compare-card-body{
+  padding:24px;
+}
+
+.compare-card-top h2{
+  margin:10px 0 14px;
+  font-size:40px;
+  line-height:.98;
+  letter-spacing:-.04em;
+}
+
+.compare-card-top p{
+  margin:0;
+  color:#a8afb8;
+  font-size:12px;
+  line-height:1.65;
+}
+
+.compare-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:18px 0 22px;
+}
+
+.compare-badges span{
+  padding:8px 10px;
+  color:#d3d6da;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:8px;
+}
+
+.compare-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-bottom:24px;
+}
+
+.compare-stats div{
+  min-height:88px;
+  padding:14px;
+  background:#171c25;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+
+.compare-stats span,
+.compare-system-list span{
+  display:block;
+  margin-bottom:8px;
+  color:#727d88;
+  font-size:7px;
+  letter-spacing:.12em;
+}
+
+.compare-stats strong,
+.compare-system-list strong{
+  display:block;
+  font-size:12px;
+  line-height:1.5;
+}
+
+.compare-section{
+  margin-top:24px;
+}
+
+.compare-system-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.compare-system-list div{
+  min-height:115px;
+  padding:14px;
+  background:#171c25;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+
+.compare-chip-group{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.compare-chip-group span{
+  padding:8px 10px;
+  background:#171c25;
+  border:1px solid var(--line);
+  border-radius:6px;
+  font-size:9px;
+}
+
+.compare-hardware-list{
+  display:grid;
+  gap:10px;
+}
+
+.compare-hardware-list article{
+  padding:14px;
+  background:#171c25;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+
+.compare-hardware-list h3{
+  margin:0 0 8px;
+  font-size:16px;
+}
+
+.compare-hardware-list p{
+  margin:0;
+  color:#99a1aa;
+  font-size:10px;
+  line-height:1.6;
+}
+
+.compare-open{
+  margin-top:24px;
+}
+
+@media(max-width:980px){
+  .compare-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:620px){
+  .compare-toolbar{
+    grid-template-columns:1fr;
+  }
+
+  .compare-versus{
+    height:40px;
+  }
+
+  .compare-stats,
+  .compare-system-list{
+    grid-template-columns:1fr;
+  }
+
+  .compare-card-top h2{
+    font-size:34px;
+  }
+}
+
+.destination-image-asteroid,
+.destination-image-asteroids,
+.destination-image-near-earth-asteroids{
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/8/8d/BennuAsteroid.jpg") !important;
+}
+
+
+/* SpaceScope V10.6 verified image repair */
+.art-tiangong {
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/25/Chinese_Tiangong_Space_Station.jpg") !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+
+.destination-image-asteroid,
+.destination-image-asteroids,
+.destination-image-near-earth-asteroids {
+  background-image:url("https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004857/bennu_spin_v3_02.1000_print.jpg") !important;
+  background-position:center !important;
+  background-size:cover !important;
+}

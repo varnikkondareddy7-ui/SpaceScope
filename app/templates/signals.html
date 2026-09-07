@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% block title %}Signal Delay | SpaceScope{% endblock %}
+{% block content %}
+<section class="page-hero-v8 signal-hero-v8">
+  <div class="container">
+    <span class="eyebrow light">COMMUNICATION ACROSS SPACE</span>
+    <h1>Space is too large for instant conversation.</h1>
+    <p>See how distance changes command timing, autonomy, and mission operations.</p>
+  </div>
+</section>
+
+<section class="dark-section no-top">
+  <div class="container signal-delay-list">
+    {% for row in signal_rows %}
+    <article>
+      <span>{{ "%02d"|format(loop.index) }}</span>
+      <div><h2>{{ row.name }}</h2><p>{{ row.note }}</p></div>
+      <div><small>DISTANCE</small><strong>{{ row.distance }}</strong></div>
+      <div><small>ONE-WAY SIGNAL</small><strong>{{ row.delay }}</strong></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

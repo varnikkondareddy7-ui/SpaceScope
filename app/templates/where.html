@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% block title %}Solar System | SpaceScope{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container"><span class="eyebrow light">SOLAR SYSTEM</span><h1>Where is everything?</h1><p>Browse spacecraft by the world, orbit, or region they are exploring.</p></div>
+</section>
+<section class="content-section">
+  <div class="container destination-grid">
+    {% for destination, items in groups.items() %}
+    <section class="destination-card">
+      <div class="destination-image destination-image-{{ destination|lower|replace(' ','-') }}"></div>
+      <div class="destination-content">
+        <div class="destination-header"><div><span class="eyebrow">DESTINATION</span><h2>{{ destination }}</h2></div><span>{{ items|length }} mission{{ '' if items|length == 1 else 's' }}</span></div>
+        <div class="destination-list">
+          {% for o in items %}
+          <a href="/object/{{ o.slug }}"><div><span>{{ o.status }}</span><h3>{{ o.name }}</h3><p>{{ o.kind }} · {{ o.location }}</p></div><b>→</b></a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

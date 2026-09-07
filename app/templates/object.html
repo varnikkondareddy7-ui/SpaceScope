@@ -1,0 +1,147 @@
+
+{% extends "base.html" %}
+{% block title %}{{ obj.name }} | SpaceScope{% endblock %}
+{% block content %}
+
+<section class="profile-hero">
+  <div class="container">
+    <div class="profile-breadcrumb">
+      <a href="/database">Missions</a>
+      <span>/</span>
+      <span>{{ obj.name }}</span>
+    </div>
+
+    <div class="profile-hero-grid">
+      <div>
+        <span class="eyebrow light">{{ obj.kind }}</span>
+        <h1>{{ obj.name }}</h1>
+        <p>{{ obj.summary }}</p>
+
+        <div class="profile-tags">
+          <span>{{ obj.status }}</span>
+          <span>{{ obj.destination }}</span>
+          <span>{{ obj.agency }}</span>
+        </div>
+      </div>
+
+      <div class="profile-hero-facts">
+        <div><span>LAUNCH</span><strong>{{ obj.launch_date }}</strong></div>
+        <div><span>LOCATION</span><strong>{{ obj.location }}</strong></div>
+        <div><span>OPERATOR</span><strong>{{ obj.operator }}</strong></div>
+        <div><span>MASS</span><strong>{{ obj.mass }}</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if obj.gallery %}
+<section class="profile-gallery-section">
+  <div class="container profile-gallery">
+    {% for image in obj.gallery[:3] %}
+    <div class="profile-gallery-image" style="background-image:url('{{ image }}')"></div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="profile-body">
+  <div class="container profile-layout">
+
+    <aside class="profile-sidebar">
+      <span class="eyebrow">MISSION</span>
+      <h3>{{ obj.name }}</h3>
+
+      <div class="sidebar-facts">
+        <div><span>STATUS</span><strong>{{ obj.status }}</strong></div>
+        <div><span>DESTINATION</span><strong>{{ obj.destination }}</strong></div>
+        <div><span>POWER</span><strong>{{ obj.power }}</strong></div>
+      </div>
+
+      <a href="/compare?a={{ obj.slug }}" class="primary-btn profile-compare">Compare spacecraft</a>
+    </aside>
+
+    <div class="profile-main">
+
+      <section class="profile-section">
+        <span class="eyebrow">ENGINEERING</span>
+        <h2>Core spacecraft systems</h2>
+
+        <div class="profile-engineering-grid">
+          <article>
+            <span>POWER</span>
+            <h3>{{ obj.power }}</h3>
+          </article>
+          <article>
+            <span>PROPULSION / MOBILITY</span>
+            <h3>{{ obj.propulsion }}</h3>
+          </article>
+          <article>
+            <span>COMMUNICATIONS</span>
+            <h3>{{ obj.communications }}</h3>
+          </article>
+          <article>
+            <span>MISSION PURPOSE</span>
+            <h3>{{ obj.purpose }}</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <span class="eyebrow">MISSION ANATOMY</span>
+        <h2>Major hardware</h2>
+
+        <div class="profile-anatomy">
+          {% for name, desc in obj.anatomy %}
+          <article>
+            <span>{{ "%02d"|format(loop.index) }}</span>
+            <h3>{{ name }}</h3>
+            <p>{{ desc }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <span class="eyebrow">INSTRUMENTS</span>
+        <h2>What it carries</h2>
+
+        <div class="profile-instruments">
+          {% for x in obj.instruments %}
+          <span>{{ x }}</span>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <span class="eyebrow">MISSION HISTORY</span>
+        <h2>Timeline</h2>
+
+        <div class="profile-timeline">
+          {% for t in obj.timeline %}
+          <article>
+            <strong>{{ t[0] }}</strong>
+            <div></div>
+            <p>{{ t[1] }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      {% if obj.records %}
+      <section class="profile-section">
+        <span class="eyebrow">RECORDS + FIRSTS</span>
+        <h2>Why this mission matters</h2>
+
+        <div class="profile-records">
+          {% for r in obj.records %}
+          <div><span>+</span><p>{{ r }}</p></div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+
+{% extends "base.html" %}
+{% block title %}Explore | SpaceScope{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container"><span class="eyebrow light">INTERACTIVE 3D EXPLORATION</span><h1>Go where the spacecraft are.</h1><p>Switch between NASA Eyes views for the solar system, Earth satellites, ISS, asteroids, and major deep-space spacecraft.</p></div>
+</section>
+<section class="explore-section">
+  <div class="container">
+    <div class="explore-tabs">
+      <button class="explore-tab active" data-view="solar"><span>01</span>Solar System</button>
+      <button class="explore-tab" data-view="earth"><span>02</span>Earth Satellites</button>
+      <button class="explore-tab" data-view="iss"><span>03</span>ISS</button>
+      <button class="explore-tab" data-view="asteroids"><span>04</span>Asteroids</button>
+      <button class="explore-tab" data-view="voyager"><span>05</span>Voyager 1</button>
+      <button class="explore-tab" data-view="europa"><span>06</span>Europa Clipper</button>
+      <button class="explore-tab" data-view="osiris"><span>07</span>OSIRIS-REx</button>
+    </div>
+    <div class="explore-layout">
+      <aside class="explore-info">
+        <span class="eyebrow">NASA EYES</span>
+        <h2 id="mapTitle">Solar System</h2>
+        <p id="mapDescription">Explore planets, moons, asteroids, comets, and spacecraft across NASA missions.</p>
+        <div class="explore-meta" id="mapMeta">
+          <div><span>VIEW</span><strong>Full solar system</strong></div>
+          <div><span>MODE</span><strong>Interactive 3D</strong></div>
+          <div><span>SOURCE</span><strong>NASA Eyes</strong></div>
+        </div>
+        <a id="mapExternal" class="inline-link" href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank">Open full NASA experience →</a>
+      </aside>
+      <div class="explore-frame-wrap">
+        <iframe id="atlasFrame" src="https://eyes.nasa.gov/apps/solar-system/#/home" title="NASA Eyes interactive" allowfullscreen></iframe>
+        <div id="atlasLoader" class="explore-loader"><span></span>Loading NASA Eyes</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="image-section">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow light">EXPLORE NEXT</span><h2>Follow the map into the mission.</h2></div></div>
+    <div class="mission-story-grid">
+      <a href="/object/perseverance" class="mission-story story-perseverance"><div><span>MARS</span><h3>Perseverance</h3><p>Rover systems, instruments, and sample caching.</p></div></a>
+      <a href="/object/juno" class="mission-story story-juno"><div><span>JUPITER</span><h3>Juno</h3><p>Solar-powered deep-space science at Jupiter.</p></div></a>
+      <a href="/object/voyager-1" class="mission-story story-voyager"><div><span>INTERSTELLAR</span><h3>Voyager 1</h3><p>The farthest human-made object.</p></div></a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+const views={
+solar:{title:"Solar System",description:"Explore planets, moons, asteroids, comets, and spacecraft across NASA missions.",src:"https://eyes.nasa.gov/apps/solar-system/#/home",view:"Full solar system",mode:"Interactive 3D"},
+earth:{title:"Earth Satellites",description:"Explore NASA Earth-observing satellites around the planet.",src:"https://eyes.nasa.gov/apps/earth/#/satellites?rate=1",view:"Earth orbit",mode:"Current satellites"},
+iss:{title:"International Space Station",description:"Jump directly to the current ISS view inside NASA Eyes.",src:"https://eyes.nasa.gov/apps/earth/#/satellites/iss?rate=1",view:"ISS",mode:"Current position"},
+asteroids:{title:"Near-Earth Asteroids",description:"Explore near-Earth objects and asteroid missions.",src:"https://eyes.nasa.gov/apps/asteroids/#/watch/",view:"Near-Earth objects",mode:"Approach data"},
+voyager:{title:"Voyager 1",description:"Follow Voyager 1 into interstellar space.",src:"https://eyes.nasa.gov/apps/solar-system/#/sc_voyager_1?rate=0",view:"Voyager 1",mode:"Spacecraft trajectory"},
+europa:{title:"Europa Clipper",description:"Follow Europa Clipper on its journey toward Jupiter.",src:"https://eyes.nasa.gov/apps/solar-system/#/sc_europa_clipper",view:"Europa Clipper",mode:"Mission trajectory"},
+osiris:{title:"OSIRIS-REx",description:"Revisit the asteroid sample-return mission.",src:"https://eyes.nasa.gov/apps/solar-system/#/sc_osiris_rex_src?rate=0&time=2023-09-24T10:41:54.806+00:00",view:"OSIRIS-REx",mode:"Sample return"}
+};
+const buttons=[...document.querySelectorAll(".explore-tab")],frame=document.getElementById("atlasFrame"),loader=document.getElementById("atlasLoader"),title=document.getElementById("mapTitle"),desc=document.getElementById("mapDescription"),external=document.getElementById("mapExternal"),meta=document.getElementById("mapMeta");
+function showView(key){const v=views[key];buttons.forEach(b=>b.classList.toggle("active",b.dataset.view===key));title.textContent=v.title;desc.textContent=v.description;external.href=v.src;meta.innerHTML=`<div><span>VIEW</span><strong>${v.view}</strong></div><div><span>MODE</span><strong>${v.mode}</strong></div><div><span>SOURCE</span><strong>NASA Eyes</strong></div>`;loader.classList.remove("hidden");frame.src=v.src}
+buttons.forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));frame.addEventListener("load",()=>loader.classList.add("hidden"));
+</script>
+{% endblock %}

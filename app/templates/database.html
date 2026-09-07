@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+{% block title %}Database | SpaceScope{% endblock %}
+{% block content %}
+<section class="page-hero-v8 database-hero-v8"><div class="container">
+  <span class="eyebrow">MISSIONS + OBJECTS</span>
+  <h1>Explore missions by destination, agency, purpose, or object type.</h1>
+  <p>Use rich curated profiles for major spacecraft and live orbital groups for thousands of Earth-orbit objects.</p>
+</section>
+
+<section class="container database-actions"><a href="/compare">Compare spacecraft →</a><a href="/timeline">Mission timeline →</a><a href="/records">Space records →</a></section><section class="container dbtabs">
+  <button type="button" class="dbtab active" data-tab="profiles">Deep profiles</button>
+  <button type="button" class="dbtab" data-tab="catalog">Live orbital catalog</button>
+</section>
+
+<section id="profilesTab" class="container dbsection dbsection-v8">
+  <div class="filters">
+    <input id="profileSearch" placeholder="Search Mars, radar, rover, NASA, spectroscopy...">
+    <select id="categoryFilter"><option value="">All categories</option>{% for c in categories %}<option>{{ c }}</option>{% endfor %}</select>
+    <select id="destinationFilter"><option value="">All destinations</option>{% for d in destinations %}<option>{{ d }}</option>{% endfor %}</select>
+  </div>
+  <div id="profileGrid" class="card-grid">
+    {% for o in objects %}
+    <a class="obj-card searchable" href="/object/{{ o.slug }}" data-category="{{ o.category }}" data-destination="{{ o.destination }}" data-text="{{ (o.name ~ ' ' ~ o.kind ~ ' ' ~ o.category ~ ' ' ~ o.agency ~ ' ' ~ o.destination ~ ' ' ~ o.summary ~ ' ' ~ o.purpose ~ ' ' ~ (o.instruments|join(' ')) ~ ' ' ~ (o.technologies|join(' ')))|lower }}">
+      <div class="obj-top"><span>{{ o.kind }}</span><span class="status {{ o.status|lower }}">{{ o.status }}</span></div>
+      <h3>{{ o.name }}</h3><p>{{ o.summary }}</p>
+      <div class="obj-meta"><span>{{ o.destination }}</span><span>{{ o.agency }}</span></div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="catalogTab" class="container dbsection hidden">
+  <div class="catalogbar">
+    <select id="catalogGroup">
+      <option value="stations" selected>Stations</option><option value="science">Science satellites</option><option value="weather">Weather satellites</option><option value="active">Full active catalog</option>
+      
+      <option value="starlink">Starlink</option><option value="oneweb">OneWeb</option>
+      <option value="iridium">Iridium NEXT</option><option value="globalstar">Globalstar</option>
+      <option value="gps">GPS</option><option value="galileo">Galileo</option>
+      <option value="beidou">BeiDou</option><option value="glonass">GLONASS</option>
+      <option value="cubesat">CubeSats</option>
+    </select>
+    <input id="catalogSearch" placeholder="Search loaded object name or NORAD ID">
+    <span id="catalogCount">Loading...</span>
+  </div>
+  <div id="catalogNotice" class="catalog-notice hidden"></div>
+  <div id="catalogTable" class="catalog-table"></div>
+
+  <div id="satModal" class="sat-modal hidden">
+    <div class="sat-modal-card">
+      <button id="satModalClose" class="sat-modal-close">×</button>
+      <span class="eyebrow">ORBITAL OBJECT</span>
+      <h2 id="satModalName">Satellite</h2>
+      <div class="sat-detail-grid">
+        <div><span>NORAD ID</span><strong id="satNorad">—</strong></div>
+        <div><span>COSPAR ID</span><strong id="satCospar">—</strong></div>
+        <div><span>INCLINATION</span><strong id="satInclination">—</strong></div>
+        <div><span>PERIOD</span><strong id="satPeriod">—</strong></div>
+        <div><span>PERIGEE</span><strong id="satPerigee">—</strong></div>
+        <div><span>APOGEE</span><strong id="satApogee">—</strong></div>
+        <div><span>ECCENTRICITY</span><strong id="satEccentricity">—</strong></div>
+        <div><span>EPOCH</span><strong id="satEpoch">—</strong></div>
+      </div>
+      <p class="sat-modal-help">Orbital data from the selected live catalog group.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/database.js"></script>
+{% endblock %}

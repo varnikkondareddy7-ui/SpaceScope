@@ -1,0 +1,50 @@
+[
+  {
+    "name": "International Space Station",
+    "status": "ACTIVE",
+    "location": "Low Earth orbit",
+    "metric": "~90 min",
+    "label": "one orbit",
+    "slug": "iss"
+  },
+  {
+    "name": "Voyager 1",
+    "status": "ACTIVE",
+    "location": "Interstellar space",
+    "metric": "Deep space",
+    "label": "communications",
+    "slug": "voyager-1"
+  },
+  {
+    "name": "Perseverance",
+    "status": "ACTIVE",
+    "location": "Jezero Crater, Mars",
+    "metric": "Mars",
+    "label": "surface science",
+    "slug": "perseverance"
+  },
+  {
+    "name": "Europa Clipper",
+    "status": "CRUISING",
+    "location": "Interplanetary cruise",
+    "metric": "Jupiter",
+    "label": "destination",
+    "slug": "europa-clipper"
+  },
+  {
+    "name": "James Webb Space Telescope",
+    "status": "ACTIVE",
+    "location": "Sun-Earth L2",
+    "metric": "Infrared",
+    "label": "observatory",
+    "slug": "jwst"
+  },
+  {
+    "name": "Parker Solar Probe",
+    "status": "ACTIVE",
+    "location": "Solar orbit",
+    "metric": "Sun",
+    "label": "closest target",
+    "slug": "parker-solar-probe"
+  }
+]

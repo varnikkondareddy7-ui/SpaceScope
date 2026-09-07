@@ -1,0 +1,1377 @@
+[
+  {
+    "slug": "perseverance",
+    "name": "Perseverance",
+    "kind": "Rover",
+    "category": "Rovers",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Mars",
+    "launch_date": "2020-07-30",
+    "location": "Jezero Crater, Mars",
+    "operator": "NASA/JPL",
+    "manufacturer": "NASA/JPL",
+    "mass": "1,025 kg",
+    "power": "MMRTG",
+    "propulsion": "Six-wheel rocker-bogie mobility",
+    "communications": "UHF relay through Mars orbiters and direct X-band",
+    "summary": "A nuclear-powered rover studying Jezero Crater, searching for signs of ancient microbial life, and caching samples for possible return to Earth.",
+    "purpose": "Astrobiology, geology, sample caching, technology demonstration",
+    "instruments": [
+      "Mastcam-Z",
+      "SuperCam",
+      "PIXL",
+      "SHERLOC",
+      "MEDA",
+      "RIMFAX",
+      "MOXIE"
+    ],
+    "technologies": [
+      "Radioisotope power",
+      "Robotics and autonomy",
+      "Spectroscopy",
+      "Ground penetrating radar",
+      "Sample caching",
+      "Deep-space communications"
+    ],
+    "timeline": [
+      [
+        "2020-07-30",
+        "Launch"
+      ],
+      [
+        "2021-02-18",
+        "Mars landing"
+      ],
+      [
+        "2021-present",
+        "Surface science and sample caching"
+      ]
+    ],
+    "x": 1.0,
+    "y": 0.04,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Mast",
+        "Mastcam-Z and SuperCam provide imaging, spectroscopy, and remote science."
+      ],
+      [
+        "Robotic arm",
+        "Positions PIXL and SHERLOC close to Martian targets."
+      ],
+      [
+        "Sample caching",
+        "Drills, seals, and stores selected samples for possible future return."
+      ],
+      [
+        "Mobility",
+        "Six-wheel rocker-bogie system traverses rough terrain."
+      ],
+      [
+        "Power",
+        "MMRTG converts heat from plutonium decay into electricity."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA23764/PIA23764~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA24487/PIA24487~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA24542/PIA24542~orig.jpg"
+    ],
+    "records": [
+      "First Mars rover to cache samples for potential return",
+      "Carried Ingenuity, first powered aircraft on another world"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Planetary Science"
+  },
+  {
+    "slug": "curiosity",
+    "name": "Curiosity",
+    "kind": "Rover",
+    "category": "Rovers",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Mars",
+    "launch_date": "2011-11-26",
+    "location": "Gale Crater, Mars",
+    "operator": "NASA/JPL",
+    "manufacturer": "NASA/JPL",
+    "mass": "899 kg",
+    "power": "MMRTG",
+    "propulsion": "Six-wheel rocker-bogie mobility",
+    "communications": "UHF relay and X-band",
+    "summary": "A Mars rover investigating whether Gale Crater once offered conditions suitable for microbial life.",
+    "purpose": "Habitability, climate, geology, radiation",
+    "instruments": [
+      "Mastcam",
+      "ChemCam",
+      "SAM",
+      "CheMin",
+      "DAN",
+      "RAD",
+      "REMS",
+      "MAHLI",
+      "APXS"
+    ],
+    "technologies": [
+      "Radioisotope power",
+      "Robotics and autonomy",
+      "Spectroscopy",
+      "Radiation sensing"
+    ],
+    "timeline": [
+      [
+        "2011-11-26",
+        "Launch"
+      ],
+      [
+        "2012-08-06",
+        "Mars landing"
+      ],
+      [
+        "2012-present",
+        "Long-duration surface science"
+      ]
+    ],
+    "x": 1.015,
+    "y": 0.03,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Chemistry mast",
+        "ChemCam analyzes targets from a distance using laser spectroscopy."
+      ],
+      [
+        "Laboratory",
+        "SAM and CheMin analyze gases, minerals, and organic chemistry."
+      ],
+      [
+        "Robotic arm",
+        "Places instruments against rocks and soil."
+      ],
+      [
+        "Mobility",
+        "Six-wheel rocker-bogie drive system."
+      ],
+      [
+        "Power",
+        "MMRTG provides continuous electrical power."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA19808/PIA19808~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA16239/PIA16239~orig.jpg"
+    ],
+    "records": [
+      "Longest-operating rover currently active on Mars"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Planetary Science"
+  },
+  {
+    "slug": "mro",
+    "name": "Mars Reconnaissance Orbiter",
+    "kind": "Orbiter",
+    "category": "Orbiters",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Mars",
+    "launch_date": "2005-08-12",
+    "location": "Mars orbit",
+    "operator": "NASA/JPL",
+    "manufacturer": "Lockheed Martin",
+    "mass": "2,180 kg launch mass",
+    "power": "Solar arrays",
+    "propulsion": "Hydrazine propulsion",
+    "communications": "X-band plus UHF rover relay",
+    "summary": "A high-resolution Mars mapping and relay orbiter studying the surface, atmosphere, minerals, and subsurface.",
+    "purpose": "Imaging, mineralogy, climate, relay",
+    "instruments": [
+      "HiRISE",
+      "CTX",
+      "CRISM",
+      "MCS",
+      "SHARAD"
+    ],
+    "technologies": [
+      "High-resolution imaging",
+      "Spectroscopy",
+      "Ground penetrating radar",
+      "Deep-space communications",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "2005-08-12",
+        "Launch"
+      ],
+      [
+        "2006-03-10",
+        "Mars orbit insertion"
+      ],
+      [
+        "2006-present",
+        "Science and relay"
+      ]
+    ],
+    "x": 1.04,
+    "y": 0.1,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [],
+    "records": [],
+    "agency_group": "NASA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "maven",
+    "name": "MAVEN",
+    "kind": "Orbiter",
+    "category": "Orbiters",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Mars",
+    "launch_date": "2013-11-18",
+    "location": "Mars orbit",
+    "operator": "NASA/GSFC",
+    "manufacturer": "Lockheed Martin",
+    "mass": "2,454 kg launch mass",
+    "power": "Solar arrays",
+    "propulsion": "Hydrazine propulsion",
+    "communications": "X-band",
+    "summary": "Studies the Martian upper atmosphere and how solar activity drives atmospheric escape.",
+    "purpose": "Atmospheric escape and space weather",
+    "instruments": [
+      "IUVS",
+      "NGIMS",
+      "MAG",
+      "SWEA",
+      "SWIA",
+      "STATIC",
+      "SEP",
+      "LPW"
+    ],
+    "technologies": [
+      "Mass spectrometry",
+      "Magnetometry",
+      "Plasma sensing",
+      "Ultraviolet spectroscopy",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "2013-11-18",
+        "Launch"
+      ],
+      [
+        "2014-09-21",
+        "Mars arrival"
+      ],
+      [
+        "2014-present",
+        "Atmospheric science"
+      ]
+    ],
+    "x": 0.97,
+    "y": 0.12,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [],
+    "records": [],
+    "agency_group": "NASA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "lro",
+    "name": "Lunar Reconnaissance Orbiter",
+    "kind": "Orbiter",
+    "category": "Orbiters",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Moon",
+    "launch_date": "2009-06-18",
+    "location": "Lunar orbit",
+    "operator": "NASA/GSFC",
+    "manufacturer": "NASA",
+    "mass": "1,916 kg",
+    "power": "Solar arrays",
+    "propulsion": "Chemical propulsion",
+    "communications": "Ka-band and S-band",
+    "summary": "Maps the Moon at high resolution and studies polar volatiles, temperatures, radiation, and landing sites.",
+    "purpose": "Lunar mapping and reconnaissance",
+    "instruments": [
+      "LROC",
+      "LOLA",
+      "LEND",
+      "Diviner",
+      "Mini-RF",
+      "CRaTER",
+      "LAMP"
+    ],
+    "technologies": [
+      "Laser altimetry",
+      "Radar",
+      "Thermal imaging",
+      "Radiation sensing",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "2009-06-18",
+        "Launch"
+      ],
+      [
+        "2009-06-23",
+        "Lunar orbit"
+      ],
+      [
+        "2009-present",
+        "Global mapping"
+      ]
+    ],
+    "x": 0.32,
+    "y": 0.06,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [],
+    "records": [],
+    "agency_group": "NASA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "artemis-ii",
+    "name": "Artemis II",
+    "kind": "Crewed Spacecraft",
+    "category": "Crewed Spacecraft",
+    "agency": "NASA",
+    "status": "Upcoming",
+    "destination": "Moon",
+    "launch_date": "2026",
+    "location": "Pre-launch",
+    "operator": "NASA",
+    "manufacturer": "Lockheed Martin / Boeing / ESA partners",
+    "mass": "Orion crew and service module system",
+    "power": "Solar arrays and batteries",
+    "propulsion": "European Service Module main engine and reaction control",
+    "communications": "Deep-space communications architecture",
+    "summary": "A crewed lunar flyby mission designed to validate Orion, life support, navigation, and deep-space operations.",
+    "purpose": "Crewed lunar flight test",
+    "instruments": [
+      "Orion",
+      "SLS",
+      "European Service Module",
+      "Crew survival systems"
+    ],
+    "technologies": [
+      "Life support",
+      "Crewed spacecraft systems",
+      "Deep-space navigation",
+      "Thermal protection",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "Pre-launch",
+        "Integration and testing"
+      ],
+      [
+        "Flight",
+        "Crewed lunar flyby"
+      ],
+      [
+        "Return",
+        "High-energy Earth reentry"
+      ]
+    ],
+    "x": 0.36,
+    "y": 0.04,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [],
+    "records": [],
+    "agency_group": "NASA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "jwst",
+    "name": "James Webb Space Telescope",
+    "kind": "Space Telescope",
+    "category": "Telescopes",
+    "agency": "NASA / ESA / CSA",
+    "status": "Active",
+    "destination": "Deep Space",
+    "launch_date": "2021-12-25",
+    "location": "Sun-Earth L2",
+    "operator": "STScI / NASA",
+    "manufacturer": "Northrop Grumman and partners",
+    "mass": "6,161 kg",
+    "power": "Solar array",
+    "propulsion": "Chemical station-keeping",
+    "communications": "Ka-band and S-band",
+    "summary": "A cryogenic infrared observatory studying early galaxies, star formation, planetary systems, and exoplanet atmospheres.",
+    "purpose": "Infrared astronomy",
+    "instruments": [
+      "NIRCam",
+      "NIRSpec",
+      "MIRI",
+      "FGS/NIRISS"
+    ],
+    "technologies": [
+      "Infrared imaging",
+      "Spectroscopy",
+      "Cryogenic systems",
+      "Sunshield thermal control",
+      "Precision pointing"
+    ],
+    "timeline": [
+      [
+        "2021-12-25",
+        "Launch"
+      ],
+      [
+        "2022-01",
+        "Deployment"
+      ],
+      [
+        "2022-present",
+        "Science operations"
+      ]
+    ],
+    "x": 0.42,
+    "y": 0.18,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Primary mirror",
+        "18 gold-coated beryllium segments collect infrared light."
+      ],
+      [
+        "Sunshield",
+        "Five layers separate hot Sun-facing hardware from cold optics."
+      ],
+      [
+        "NIRCam",
+        "Primary near-infrared imager and wavefront sensing instrument."
+      ],
+      [
+        "MIRI",
+        "Mid-infrared camera and spectrograph requiring cryogenic cooling."
+      ],
+      [
+        "High-gain antenna",
+        "Returns science data from the Sun-Earth L2 region."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA25840/PIA25840~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA25433/PIA25433~orig.jpg"
+    ],
+    "records": [
+      "Largest space telescope ever deployed",
+      "Largest segmented mirror launched to space"
+    ],
+    "agency_group": "NASA / ESA / CSA",
+    "purpose_group": "Astronomy"
+  },
+  {
+    "slug": "voyager-1",
+    "name": "Voyager 1",
+    "kind": "Deep Space Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Deep Space",
+    "launch_date": "1977-09-05",
+    "location": "Interstellar space",
+    "operator": "NASA/JPL",
+    "manufacturer": "NASA/JPL",
+    "mass": "825.5 kg",
+    "power": "RTGs",
+    "propulsion": "Hydrazine attitude-control thrusters",
+    "communications": "S/X-band via Deep Space Network",
+    "summary": "Humanity's most distant spacecraft, still measuring the interstellar environment after Jupiter and Saturn flybys.",
+    "purpose": "Outer planets and interstellar science",
+    "instruments": [
+      "MAG",
+      "CRS",
+      "PWS",
+      "LECP"
+    ],
+    "technologies": [
+      "Radioisotope power",
+      "Deep-space communications",
+      "Magnetometry",
+      "Particle detection"
+    ],
+    "timeline": [
+      [
+        "1977-09-05",
+        "Launch"
+      ],
+      [
+        "1979",
+        "Jupiter"
+      ],
+      [
+        "1980",
+        "Saturn"
+      ],
+      [
+        "2012",
+        "Interstellar space"
+      ]
+    ],
+    "x": 9.2,
+    "y": 0.8,
+    "z": 2.0,
+    "anatomy": [
+      [
+        "High-gain antenna",
+        "3.7 m dish maintains communication with Earth."
+      ],
+      [
+        "RTGs",
+        "Radioisotope generators provide long-duration power far from the Sun."
+      ],
+      [
+        "Magnetometer boom",
+        "Keeps magnetic sensors away from spacecraft interference."
+      ],
+      [
+        "Science platform",
+        "Originally carried imaging and planetary science instruments."
+      ],
+      [
+        "Golden Record",
+        "Carries sounds and images selected to represent Earth."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA17047/PIA17047~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA00452/PIA00452~orig.jpg"
+    ],
+    "records": [
+      "Farthest human-made object",
+      "First spacecraft to enter interstellar space"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Deep Space"
+  },
+  {
+    "slug": "voyager-2",
+    "name": "Voyager 2",
+    "kind": "Deep Space Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Deep Space",
+    "launch_date": "1977-08-20",
+    "location": "Interstellar space",
+    "operator": "NASA/JPL",
+    "manufacturer": "NASA/JPL",
+    "mass": "825.5 kg",
+    "power": "RTGs",
+    "propulsion": "Hydrazine attitude-control thrusters",
+    "communications": "S/X-band via Deep Space Network",
+    "summary": "The only spacecraft to visit Uranus and Neptune, now measuring interstellar plasma, fields, and particles.",
+    "purpose": "Outer planets and interstellar science",
+    "instruments": [
+      "MAG",
+      "CRS",
+      "PLS",
+      "PWS",
+      "LECP"
+    ],
+    "technologies": [
+      "Radioisotope power",
+      "Deep-space communications",
+      "Plasma sensing",
+      "Magnetometry"
+    ],
+    "timeline": [
+      [
+        "1977-08-20",
+        "Launch"
+      ],
+      [
+        "1986",
+        "Uranus"
+      ],
+      [
+        "1989",
+        "Neptune"
+      ],
+      [
+        "2018",
+        "Interstellar space"
+      ]
+    ],
+    "x": 8.5,
+    "y": -1.2,
+    "z": -1.6,
+    "anatomy": [
+      [
+        "High-gain antenna",
+        "Maintains deep-space radio contact."
+      ],
+      [
+        "RTGs",
+        "Provide electrical power decades after launch."
+      ],
+      [
+        "Planetary instruments",
+        "Studied all four giant planets."
+      ],
+      [
+        "Magnetometer boom",
+        "Measures magnetic environments."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA17046/PIA17046~orig.jpg"
+    ],
+    "records": [
+      "Only spacecraft to visit Uranus",
+      "Only spacecraft to visit Neptune"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Deep Space"
+  },
+  {
+    "slug": "new-horizons",
+    "name": "New Horizons",
+    "kind": "Deep Space Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Deep Space",
+    "launch_date": "2006-01-19",
+    "location": "Kuiper Belt",
+    "operator": "NASA / APL",
+    "manufacturer": "Johns Hopkins APL / SwRI",
+    "mass": "478 kg",
+    "power": "RTG",
+    "propulsion": "Hydrazine thrusters",
+    "communications": "X-band",
+    "summary": "Performed the first reconnaissance of Pluto and later flew past Kuiper Belt object Arrokoth.",
+    "purpose": "Pluto and Kuiper Belt exploration",
+    "instruments": [
+      "LORRI",
+      "Ralph",
+      "Alice",
+      "REX",
+      "SWAP",
+      "PEPSSI",
+      "SDC"
+    ],
+    "technologies": [
+      "Radioisotope power",
+      "Long-range imaging",
+      "Ultraviolet spectroscopy",
+      "Deep-space communications"
+    ],
+    "timeline": [
+      [
+        "2006-01-19",
+        "Launch"
+      ],
+      [
+        "2015-07-14",
+        "Pluto flyby"
+      ],
+      [
+        "2019-01-01",
+        "Arrokoth flyby"
+      ],
+      [
+        "2019-present",
+        "Extended mission"
+      ]
+    ],
+    "x": 6.8,
+    "y": 1.1,
+    "z": 0.8,
+    "anatomy": [
+      [
+        "High-gain antenna",
+        "Returns data across billions of kilometers."
+      ],
+      [
+        "RTG",
+        "Provides power in the outer solar system."
+      ],
+      [
+        "LORRI",
+        "Long-range telescope for high-resolution imaging."
+      ],
+      [
+        "Ralph",
+        "Visible and infrared imaging spectrometer."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA19952/PIA19952~orig.jpg"
+    ],
+    "records": [
+      "First spacecraft to explore Pluto",
+      "First spacecraft to explore a Kuiper Belt object"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Deep Space"
+  },
+  {
+    "slug": "juno",
+    "name": "Juno",
+    "kind": "Orbiter",
+    "category": "Orbiters",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Jupiter",
+    "launch_date": "2011-08-05",
+    "location": "Jupiter orbit",
+    "operator": "NASA/JPL",
+    "manufacturer": "Lockheed Martin",
+    "mass": "3,625 kg launch mass",
+    "power": "Solar arrays",
+    "propulsion": "Chemical propulsion and reaction control",
+    "communications": "X-band and Ka-band",
+    "summary": "A polar Jupiter orbiter probing the planet's gravity, magnetic field, atmosphere, auroras, and interior.",
+    "purpose": "Jupiter interior and atmosphere",
+    "instruments": [
+      "JunoCam",
+      "MWR",
+      "MAG",
+      "JADE",
+      "JEDI",
+      "UVS",
+      "JIRAM",
+      "Gravity Science"
+    ],
+    "technologies": [
+      "Solar power",
+      "Magnetometry",
+      "Microwave radiometry",
+      "Particle sensing",
+      "Precision gravity science"
+    ],
+    "timeline": [
+      [
+        "2011-08-05",
+        "Launch"
+      ],
+      [
+        "2016-07-04",
+        "Jupiter orbit"
+      ],
+      [
+        "2016-present",
+        "Perijove science"
+      ]
+    ],
+    "x": 3.0,
+    "y": 0.12,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Solar arrays",
+        "Three giant wings power the spacecraft at Jupiter."
+      ],
+      [
+        "Microwave Radiometer",
+        "Looks deep below Jupiter's cloud tops."
+      ],
+      [
+        "Magnetometer",
+        "Measures Jupiter's magnetic field."
+      ],
+      [
+        "JunoCam",
+        "Visible-light camera provides public and scientific imaging."
+      ],
+      [
+        "Radiation vault",
+        "Protects electronics from intense Jovian radiation."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA21033/PIA21033~orig.jpg",
+      "https://images-assets.nasa.gov/image/PIA22946/PIA22946~orig.jpg"
+    ],
+    "records": [
+      "First solar-powered spacecraft to operate at Jupiter"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Planetary Science"
+  },
+  {
+    "slug": "juice",
+    "name": "JUICE",
+    "kind": "Deep Space Probe",
+    "category": "Probes",
+    "agency": "ESA",
+    "status": "Active",
+    "destination": "Jupiter",
+    "launch_date": "2023-04-14",
+    "location": "Cruise to Jupiter",
+    "operator": "ESA",
+    "manufacturer": "Airbus Defence and Space",
+    "mass": "About 6,000 kg",
+    "power": "Solar arrays",
+    "propulsion": "Chemical propulsion",
+    "communications": "X-band and Ka-band",
+    "summary": "ESA's Jupiter Icy Moons Explorer, traveling to study Ganymede, Callisto, Europa, and the Jovian environment.",
+    "purpose": "Icy moons and habitability",
+    "instruments": [
+      "JANUS",
+      "MAJIS",
+      "UVS",
+      "SWI",
+      "GALA",
+      "RIME",
+      "J-MAG",
+      "PEP",
+      "RPWI",
+      "3GM"
+    ],
+    "technologies": [
+      "Ice-penetrating radar",
+      "Laser altimetry",
+      "Spectroscopy",
+      "Magnetometry",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "2023-04-14",
+        "Launch"
+      ],
+      [
+        "2024-2031",
+        "Gravity assists"
+      ],
+      [
+        "2031",
+        "Planned Jupiter arrival"
+      ]
+    ],
+    "x": 2.1,
+    "y": 0.5,
+    "z": 0.1,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [],
+    "records": [],
+    "agency_group": "ESA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "europa-clipper",
+    "name": "Europa Clipper",
+    "kind": "Deep Space Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Jupiter",
+    "launch_date": "2024-10-14",
+    "location": "Cruise to Jupiter",
+    "operator": "NASA/JPL",
+    "manufacturer": "NASA/JPL and partners",
+    "mass": "About 6,000 kg",
+    "power": "Large solar arrays",
+    "propulsion": "Chemical propulsion",
+    "communications": "High-gain deep-space radio",
+    "summary": "Traveling to Jupiter to investigate Europa's ice shell, ocean, composition, geology, and potential habitability.",
+    "purpose": "Europa habitability",
+    "instruments": [
+      "EIS",
+      "MISE",
+      "Europa-UVS",
+      "E-THEMIS",
+      "REASON",
+      "ECM",
+      "MASPEX",
+      "SUDA",
+      "PIMS"
+    ],
+    "technologies": [
+      "Ice-penetrating radar",
+      "Mass spectrometry",
+      "Thermal imaging",
+      "Magnetometry",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "2024-10-14",
+        "Launch"
+      ],
+      [
+        "Cruise",
+        "Gravity assists"
+      ],
+      [
+        "2030",
+        "Planned Jupiter system arrival"
+      ]
+    ],
+    "x": 1.8,
+    "y": 0.4,
+    "z": -0.2,
+    "anatomy": [
+      [
+        "Large solar arrays",
+        "Generate power in weak sunlight at Jupiter."
+      ],
+      [
+        "REASON radar",
+        "Probes Europa's ice shell."
+      ],
+      [
+        "Mass spectrometer",
+        "Samples particles and gases related to Europa."
+      ],
+      [
+        "Magnetometer",
+        "Helps infer the properties of Europa's subsurface ocean."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA26069/PIA26069~orig.jpg"
+    ],
+    "records": [
+      "Largest NASA planetary spacecraft built for a planetary mission"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Planetary Science"
+  },
+  {
+    "slug": "parker-solar-probe",
+    "name": "Parker Solar Probe",
+    "kind": "Solar Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Sun",
+    "launch_date": "2018-08-12",
+    "location": "Solar orbit",
+    "operator": "NASA / APL",
+    "manufacturer": "Johns Hopkins APL",
+    "mass": "685 kg",
+    "power": "Solar arrays",
+    "propulsion": "Hydrazine attitude control",
+    "communications": "Ka-band and X-band",
+    "summary": "Flies closer to the Sun than any previous spacecraft to directly sample the corona and solar wind.",
+    "purpose": "Heliophysics",
+    "instruments": [
+      "FIELDS",
+      "WISPR",
+      "SWEAP",
+      "ISOIS"
+    ],
+    "technologies": [
+      "Extreme thermal protection",
+      "Solar power",
+      "Plasma sensing",
+      "Magnetometry",
+      "Energetic particle detection"
+    ],
+    "timeline": [
+      [
+        "2018-08-12",
+        "Launch"
+      ],
+      [
+        "2021",
+        "Entered solar corona"
+      ],
+      [
+        "2018-present",
+        "Repeated close solar encounters"
+      ]
+    ],
+    "x": 0.18,
+    "y": 0.06,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Thermal Protection System",
+        "Carbon-composite shield protects the spacecraft during close solar passes."
+      ],
+      [
+        "Solar arrays",
+        "Retract and use active cooling near the Sun."
+      ],
+      [
+        "FIELDS",
+        "Measures electric and magnetic fields."
+      ],
+      [
+        "SWEAP",
+        "Samples solar-wind particles."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/PIA22146/PIA22146~orig.jpg"
+    ],
+    "records": [
+      "Fastest human-made object",
+      "Closest spacecraft to the Sun"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Heliophysics"
+  },
+  {
+    "slug": "osiris-apex",
+    "name": "OSIRIS-APEX",
+    "kind": "Asteroid Probe",
+    "category": "Probes",
+    "agency": "NASA",
+    "status": "Active",
+    "destination": "Asteroid",
+    "launch_date": "2016-09-08",
+    "location": "Cruise to Apophis",
+    "operator": "NASA / University of Arizona",
+    "manufacturer": "Lockheed Martin",
+    "mass": "2,110 kg launch mass",
+    "power": "Solar arrays",
+    "propulsion": "Hydrazine propulsion",
+    "communications": "X-band",
+    "summary": "Formerly OSIRIS-REx, the spacecraft returned samples from Bennu and now continues toward asteroid Apophis.",
+    "purpose": "Asteroid science and sample-return heritage",
+    "instruments": [
+      "OCAMS",
+      "OLA",
+      "OTES",
+      "OVIRS"
+    ],
+    "technologies": [
+      "Sample return",
+      "Laser altimetry",
+      "Spectroscopy",
+      "Solar power",
+      "Autonomous navigation"
+    ],
+    "timeline": [
+      [
+        "2016-09-08",
+        "Launch"
+      ],
+      [
+        "2020",
+        "Bennu sample collection"
+      ],
+      [
+        "2023-09-24",
+        "Sample return"
+      ],
+      [
+        "2023-present",
+        "Cruise to Apophis"
+      ]
+    ],
+    "x": 1.45,
+    "y": 0.6,
+    "z": 0.3,
+    "anatomy": [
+      [
+        "OCAMS",
+        "Camera suite for navigation and asteroid imaging."
+      ],
+      [
+        "OLA",
+        "Laser altimeter used to map asteroid topography."
+      ],
+      [
+        "Spectrometers",
+        "Measured composition across visible and infrared wavelengths."
+      ],
+      [
+        "Sample-return heritage",
+        "Previously collected and delivered Bennu material to Earth."
+      ]
+    ],
+    "gallery": [
+      "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004857/bennu_spin_v3_02.1000_print.jpg",
+      "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004857/bennu_spin_v3_02.1000_print.jpg",
+      "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004857/bennu_spin_v3_02.1000_print.jpg"
+    ],
+    "records": [
+      "Returned a sample from asteroid Bennu"
+    ],
+    "agency_group": "NASA",
+    "purpose_group": "Planetary Science"
+  },
+  {
+    "slug": "iss",
+    "name": "International Space Station",
+    "kind": "Space Station",
+    "category": "Space Stations",
+    "agency": "NASA / Roscosmos / ESA / JAXA / CSA",
+    "status": "Active",
+    "destination": "Earth",
+    "launch_date": "1998-11-20",
+    "location": "Low Earth orbit",
+    "operator": "International partnership",
+    "manufacturer": "International partnership",
+    "mass": "About 420,000 kg",
+    "power": "Photovoltaic solar arrays",
+    "propulsion": "Reboost via station and visiting vehicles",
+    "communications": "S-band, Ku-band, relay satellites, visiting-vehicle links",
+    "summary": "A continuously crewed orbital laboratory supporting microgravity science, technology testing, Earth observation, and long-duration human spaceflight.",
+    "purpose": "Microgravity research and crewed operations",
+    "instruments": [
+      "Alpha Magnetic Spectrometer",
+      "NICER",
+      "ECOSTRESS",
+      "Cold Atom Lab",
+      "Canadarm2"
+    ],
+    "technologies": [
+      "Life support",
+      "Robotics",
+      "Solar power",
+      "Docking",
+      "Microgravity research",
+      "Earth observation"
+    ],
+    "timeline": [
+      [
+        "1998-11-20",
+        "First module"
+      ],
+      [
+        "2000-11-02",
+        "Permanent occupation"
+      ],
+      [
+        "1998-present",
+        "Assembly and science"
+      ]
+    ],
+    "x": 0.0,
+    "y": 0.08,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Solar arrays",
+        "Large photovoltaic wings provide station power."
+      ],
+      [
+        "Truss",
+        "Supports radiators, arrays, and external systems."
+      ],
+      [
+        "Pressurized modules",
+        "Laboratories, crew quarters, storage, and docking areas."
+      ],
+      [
+        "Canadarm2",
+        "Robotic system captures vehicles and moves hardware."
+      ],
+      [
+        "Cupola",
+        "Seven-window observation module for robotics and Earth viewing."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/iss065e336671/iss065e336671~orig.jpg",
+      "https://images-assets.nasa.gov/image/iss056e201248/iss056e201248~orig.jpg"
+    ],
+    "records": [
+      "Largest human-made structure in orbit",
+      "Continuous human presence since 2000"
+    ],
+    "agency_group": "International",
+    "purpose_group": "Human Spaceflight"
+  },
+  {
+    "slug": "tiangong",
+    "name": "Tiangong Space Station",
+    "kind": "Space Station",
+    "category": "Space Stations",
+    "agency": "CMSA",
+    "status": "Active",
+    "destination": "Earth",
+    "launch_date": "2021",
+    "location": "Low Earth orbit",
+    "operator": "China Manned Space Agency",
+    "manufacturer": "China Academy of Space Technology",
+    "mass": "Roughly 100-tonne class when assembled",
+    "power": "Solar arrays",
+    "propulsion": "Module-based propulsion and attitude control",
+    "communications": "Space-to-ground and relay links",
+    "summary": "China's modular crewed station supporting long-duration habitation, science, and visiting spacecraft operations.",
+    "purpose": "Crewed research station",
+    "instruments": [
+      "Wentian lab module",
+      "Mengtian lab module",
+      "External experiment platforms"
+    ],
+    "technologies": [
+      "Life support",
+      "Docking",
+      "Solar power",
+      "Microgravity research"
+    ],
+    "timeline": [
+      [
+        "2021",
+        "Tianhe launch"
+      ],
+      [
+        "2022",
+        "Lab modules added"
+      ],
+      [
+        "2021-present",
+        "Crewed operations"
+      ]
+    ],
+    "x": 0.0,
+    "y": -0.08,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Spacecraft bus",
+        "Core structure, avionics, thermal control, and power distribution."
+      ],
+      [
+        "Communications",
+        "Radio system connects the spacecraft to Earth or relay networks."
+      ]
+    ],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Chinese_Tiangong_Space_Station.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Tiangong_Space_Station_Rendering_2022.10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Chinese_Tiangong_Space_Station.jpg"
+    ],
+    "records": [],
+    "agency_group": "CMSA",
+    "purpose_group": "Exploration"
+  },
+  {
+    "slug": "hubble",
+    "name": "Hubble Space Telescope",
+    "kind": "Space Telescope",
+    "category": "Telescopes",
+    "agency": "NASA / ESA",
+    "status": "Active",
+    "destination": "Earth",
+    "launch_date": "1990-04-24",
+    "location": "Low Earth orbit",
+    "operator": "NASA / STScI",
+    "manufacturer": "Lockheed / Perkin-Elmer heritage teams",
+    "mass": "11,110 kg",
+    "power": "Solar arrays",
+    "propulsion": "Reaction wheels and magnetic torquers for pointing",
+    "communications": "Tracking and Data Relay Satellite System",
+    "summary": "A flagship observatory operating in ultraviolet, visible, and near-infrared wavelengths.",
+    "purpose": "General astrophysics",
+    "instruments": [
+      "WFC3",
+      "COS",
+      "ACS",
+      "STIS"
+    ],
+    "technologies": [
+      "Precision pointing",
+      "Ultraviolet imaging",
+      "Visible imaging",
+      "Spectroscopy",
+      "Solar power"
+    ],
+    "timeline": [
+      [
+        "1990-04-24",
+        "Launch"
+      ],
+      [
+        "1993",
+        "Corrective optics"
+      ],
+      [
+        "2009",
+        "Final servicing mission"
+      ],
+      [
+        "1990-present",
+        "Science operations"
+      ]
+    ],
+    "x": 0.0,
+    "y": 0.12,
+    "z": 0.0,
+    "anatomy": [
+      [
+        "Primary mirror",
+        "2.4 m mirror focuses ultraviolet, visible, and near-infrared light."
+      ],
+      [
+        "Wide Field Camera 3",
+        "High-resolution imaging across visible and infrared wavelengths."
+      ],
+      [
+        "Solar arrays",
+        "Provide electrical power in low Earth orbit."
+      ],
+      [
+        "Reaction wheels",
+        "Point the observatory without continuous propellant use."
+      ]
+    ],
+    "gallery": [
+      "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001519/GSFC_20171208_Archive_e001519~orig.jpg"
+    ],
+    "records": [
+      "One of the longest-operating major space observatories"
+    ],
+    "agency_group": "NASA / ESA",
+    "purpose_group": "Astronomy"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Farthest human-made object",
+    "value": "Voyager 1",
+    "slug": "voyager-1",
+    "detail": "Traveling through interstellar space."
+  },
+  {
+    "title": "Fastest human-made object",
+    "value": "Parker Solar Probe",
+    "slug": "parker-solar-probe",
+    "detail": "Solar gravity assists drive record-setting velocity."
+  },
+  {
+    "title": "Largest structure in orbit",
+    "value": "International Space Station",
+    "slug": "iss",
+    "detail": "A continuously crewed multinational laboratory."
+  },
+  {
+    "title": "Largest space telescope",
+    "value": "James Webb Space Telescope",
+    "slug": "jwst",
+    "detail": "A 6.5-meter segmented primary mirror."
+  },
+  {
+    "title": "First powered flight on another world",
+    "value": "Ingenuity",
+    "slug": "perseverance",
+    "detail": "Demonstrated controlled powered flight on Mars."
+  },
+  {
+    "title": "Only spacecraft to visit Neptune",
+    "value": "Voyager 2",
+    "slug": "voyager-2",
+    "detail": "Completed the only close reconnaissance of Neptune in 1989."
+  }
+]
